@@ -9,14 +9,12 @@ public class Player : MonoBehaviour
     public bool touch = false;
 
     //public float rotationSpeed = 180.0f;
-    // Start is called before the first frame update
 
     void Start()
     {
         cam = Camera.main;
     }
 
-    // Update is called once per frame
     void Update()
     {
         /*// player rotation (left and right)
@@ -32,10 +30,12 @@ public class Player : MonoBehaviour
         var delta = Input.GetAxis("Vertical") * this.speed * this.GetComponent<Transform>().forward;
         this.GetComponent<CharacterController>().SimpleMove(delta);
 
-        // If space pressed ~~~~~~~~~~~~~~~~~~~~~~~might implement this later
+        //~~~~~~~~~~~~~~~~~~~~~~~might implement this later
+        /*
         if (Input.GetKeyDown("space"))
         {
         }
+        */
     }   
     
     // check if player is touching something
