@@ -849,7 +849,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b59408793dfc842b9a5051f2c8489c9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Textfield: {fileID: 1770707657}
+  Textfield1: {fileID: 0}
+  Textfield2: {fileID: 0}
+  Textfield3: {fileID: 0}
   num1: 0
   num2: 0
   num3: 0
@@ -1017,7 +1019,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b59408793dfc842b9a5051f2c8489c9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Textfield: {fileID: 143970753}
+  Textfield1: {fileID: 0}
+  Textfield2: {fileID: 0}
+  Textfield3: {fileID: 0}
   num1: 0
   num2: 0
   num3: 0
@@ -2829,7 +2833,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b59408793dfc842b9a5051f2c8489c9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Textfield: {fileID: 628686645}
+  Textfield1: {fileID: 628686645}
+  Textfield2: {fileID: 1770707657}
+  Textfield3: {fileID: 143970753}
   num1: 0
   num2: 0
   num3: 0
@@ -3250,7 +3256,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b59408793dfc842b9a5051f2c8489c9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Textfield: {fileID: 628686645}
+  Textfield1: {fileID: 628686645}
+  Textfield2: {fileID: 1770707657}
+  Textfield3: {fileID: 143970753}
   num1: 0
   num2: 0
   num3: 0
@@ -3627,7 +3635,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b59408793dfc842b9a5051f2c8489c9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Textfield: {fileID: 1770707657}
+  Textfield1: {fileID: 0}
+  Textfield2: {fileID: 0}
+  Textfield3: {fileID: 0}
   num1: 0
   num2: 0
   num3: 0
@@ -3985,7 +3995,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b59408793dfc842b9a5051f2c8489c9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Textfield: {fileID: 143970753}
+  Textfield1: {fileID: 0}
+  Textfield2: {fileID: 0}
+  Textfield3: {fileID: 0}
   num1: 0
   num2: 0
   num3: 0
