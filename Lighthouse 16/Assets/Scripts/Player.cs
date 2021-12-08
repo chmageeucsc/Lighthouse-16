@@ -36,6 +36,10 @@ public class Player : MonoBehaviour
         {
         }
         */
+        var transform = this.GetComponent<Transform>();
+        if(transform.position.y < -1f){
+            transform.position = new Vector3(0f,0f,0f);
+        }
     }   
     
     // check if player is touching something
