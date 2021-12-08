@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class MouseLook : MonoBehaviour
 {
+    // Turn camera off when canvas active
+    public GameObject CryingStatue;
+
     // Enumeration describes which directions this script should control
     public enum RotationDirection { 
         None, 
@@ -50,17 +53,21 @@ public class MouseLook : MonoBehaviour
     }
 
     private Vector2 GetInput() {
-        // Add to the lag timer
-        inputLagTimer += Time.deltaTime;
-        // Get the input vector. This can be changed to work with the new input system or even touch controls.
-        Vector2 input = new Vector2(
-            Input.GetAxis("Mouse X"),
-            Input.GetAxis("Mouse Y")
-        );
-
-        if ((Mathf.Approximately(0, input.x) && Mathf.Approximately(0, input.y)) == false || inputLagTimer >= inputLagPeriod) {
-            lastInputEvent = input;
-            inputLagTimer = 0;
+        if (!this.CryingStatue.activeSelf) {
+            // Add to the lag timer
+            inputLagTimer += Time.deltaTime;
+        
+            // Get the input vector. This can be changed to work with the new input system or even touch controls.
+            Vector2 input = new Vector2(
+                Input.GetAxis("Mouse X"),
+                Input.GetAxis("Mouse Y")
+            );
+        
+            if ((Mathf.Approximately(0, input.x) && Mathf.Approximately(0, input.y)) == false || inputLagTimer >= inputLagPeriod)
+            {
+                lastInputEvent = input;
+                inputLagTimer = 0;
+            }
         }
         return lastInputEvent;
     }

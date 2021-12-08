@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.068591245, g: 0.17902535, b: 0.29280683, a: 1}
+  m_IndirectSpecularColor: {r: 0.068383805, g: 0.1790247, b: 0.29256946, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1919,6 +1919,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e49c51e9e3128304099d8f9daae2f8dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CryingStatue: {fileID: 0}
   rotationDirections: 2
   acceleration: {x: 2000, y: 2000}
   sensitivity: {x: 2000, y: -2000}
@@ -3582,9 +3583,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e49c51e9e3128304099d8f9daae2f8dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CryingStatue: {fileID: 566242776}
   rotationDirections: 1
   acceleration: {x: 2000, y: 2000}
-  sensitivity: {x: 2000, y: -2000}
+  sensitivity: {x: 1500, y: -1500}
   maxVerticalAngleFromHorizon: 90
   inputLagPeriod: 0.005
 --- !u!65 &1984605080
