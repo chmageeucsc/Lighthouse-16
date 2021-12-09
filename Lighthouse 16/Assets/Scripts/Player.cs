@@ -30,6 +30,9 @@ public class Player : MonoBehaviour
         var delta = Input.GetAxis("Vertical") * this.speed * this.GetComponent<Transform>().forward;
         this.GetComponent<CharacterController>().SimpleMove(delta);
 
+        // player movement (left and right ???)
+        this.transform.Translate(Input.GetAxis("Horizontal") * this.speed * 5 * Time.deltaTime, 0, 0);
+
         //~~~~~~~~~~~~~~~~~~~~~~~might implement this later
         /*
         if (Input.GetKeyDown("space"))
