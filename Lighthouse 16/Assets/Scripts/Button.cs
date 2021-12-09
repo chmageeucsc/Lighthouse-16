@@ -42,6 +42,12 @@ public class Button : MonoBehaviour
             num3 = NumSub(num3);
             Textfield3.text = num3.ToString();
         } 
+        //reimplement when boltcutters are added
+        /*
+        if(num1 == 3 && num2 == 5 && num3 == 2){
+            whatever we set boltcutters to set to true here
+        }
+        */
     }
 
     public int NumAdd(int num){
