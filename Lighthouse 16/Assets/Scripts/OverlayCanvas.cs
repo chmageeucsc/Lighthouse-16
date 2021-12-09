@@ -16,7 +16,7 @@ public class OverlayCanvas : MonoBehaviour {
         GameObject thePlayer = GameObject.Find("Player");
         Player playerScript = thePlayer.GetComponent<Player>();
 
-        // if cutterVar > 0, hide menu
+        // if boltcutterVar > 0, hide menu
         GameObject invent = GameObject.Find("Inventory");
         InventorySystem inventorySystem = invent.GetComponent<InventorySystem>();
 
