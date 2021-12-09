@@ -13,16 +13,19 @@ public class OverlayCanvas : MonoBehaviour {
 
     void Update() {
         // show canvas if space is pressed
-        //if (Input.GetKeyDown("space")) {
-            GameObject thePlayer = GameObject.Find("Player");
-            Player playerScript = thePlayer.GetComponent<Player>();
+        GameObject thePlayer = GameObject.Find("Player");
+        Player playerScript = thePlayer.GetComponent<Player>();
 
-            if(playerScript.touch == true){
-                menu.SetActive(true);
-            }
-            else{
-                //isShowing = !isShowing;
-                menu.SetActive(false);
-            }
+        // if cutterVar > 0, hide menu
+        GameObject invent = GameObject.Find("Inventory");
+        InventorySystem inventorySystem = invent.GetComponent<InventorySystem>();
+
+        if(playerScript.touch == true && inventorySystem.boltcuttersVar == 0){
+            menu.SetActive(true);
+        }
+        else{
+            //isShowing = !isShowing;
+            menu.SetActive(false);
+        }
     }
 }

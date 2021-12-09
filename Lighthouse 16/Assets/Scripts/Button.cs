@@ -9,9 +9,9 @@ public class Button : MonoBehaviour
     public Text Textfield1;
     public Text Textfield2;
     public Text Textfield3;
-    public int num1 = 0;
-    public int num2 = 0;
-    public int num3 = 0;
+    public static int num1 = 0;
+    public static int num2 = 0;
+    public static int num3 = 0;
 
     public void OnClicked(Button button)
     {
@@ -42,12 +42,6 @@ public class Button : MonoBehaviour
             num3 = NumSub(num3);
             Textfield3.text = num3.ToString();
         } 
-        //reimplement when boltcutters are added
-        /*
-        if(num1 == 3 && num2 == 5 && num3 == 2){
-            whatever we set boltcutters to set to true here
-        }
-        */
     }
 
     public int NumAdd(int num){
@@ -66,6 +60,12 @@ public class Button : MonoBehaviour
 
     void Update()
     {
-        
+        // check combo, give boltcutters
+        if(num1 == 3 && num2 == 5 && num3 == 2){
+            // whatever we set boltcutters to set to true here
+            GameObject invent = GameObject.Find("Inventory");
+            InventorySystem inventorySystem = invent.GetComponent<InventorySystem>();
+            inventorySystem.boltcuttersVar = 1;
+        }
     }
 }
