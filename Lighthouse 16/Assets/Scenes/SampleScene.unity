@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.068591245, g: 0.17902535, b: 0.29280683, a: 1}
+  m_IndirectSpecularColor: {r: 0.068149924, g: 0.17824626, b: 0.29191238, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10957,7 +10957,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e49c51e9e3128304099d8f9daae2f8dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CryingStatue: {fileID: 575705511}
+  CryingStatue: {fileID: 566242776}
   rotationDirections: 2
   acceleration: {x: 2000, y: 2000}
   sensitivity: {x: 2000, y: -2000}
@@ -15816,7 +15816,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 96ccd4cb7a6d1054f9eb81448ab2b49c, type: 2}
+  - {fileID: 2100000, guid: ae29ac02d08992344b9095971167e1c6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
