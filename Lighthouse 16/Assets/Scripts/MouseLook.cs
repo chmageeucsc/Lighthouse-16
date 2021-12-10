@@ -53,7 +53,9 @@ public class MouseLook : MonoBehaviour
     }
 
     private Vector2 GetInput() {
-        if (!this.CryingStatue.activeSelf) {
+        // turns off mouse look chen crying statue code is showing BUT takes away up and down mouse look completely
+        if (this.CryingStatue.activeSelf == false) {
+
             // Add to the lag timer
             inputLagTimer += Time.deltaTime;
         

@@ -10862,7 +10862,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e49c51e9e3128304099d8f9daae2f8dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CryingStatue: {fileID: 575705511}
+  CryingStatue: {fileID: 566242776}
   rotationDirections: 2
   acceleration: {x: 2000, y: 2000}
   sensitivity: {x: 2000, y: -2000}
