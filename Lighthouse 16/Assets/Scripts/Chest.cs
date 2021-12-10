@@ -4,18 +4,6 @@ using UnityEngine;
 
 public class Chest : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     // click on the chest and the reel appears and the chest opens
     void OnMouseDown(){
         // retrieve inventorySystem script

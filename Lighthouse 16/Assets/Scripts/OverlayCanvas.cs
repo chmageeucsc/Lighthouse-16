@@ -5,6 +5,7 @@ using UnityEngine;
 public class OverlayCanvas : MonoBehaviour {
   
     public GameObject menu; // Assign in inspector
+    public GameObject hotbar; // Assign in inspector
  
     void Start()
     {
@@ -12,20 +13,23 @@ public class OverlayCanvas : MonoBehaviour {
     }
 
     void Update() {
-        // show canvas if space is pressed
+        // find player
         GameObject thePlayer = GameObject.Find("Player");
         Player playerScript = thePlayer.GetComponent<Player>();
 
-        // if boltcutterVar > 0, hide menu
+        // find inventory script
         GameObject invent = GameObject.Find("Inventory");
         InventorySystem inventorySystem = invent.GetComponent<InventorySystem>();
 
+        // show canvas if space is pressed
         if(playerScript.touch == true && inventorySystem.boltcuttersVar == 0){
             menu.SetActive(true);
+            inventorySystem.hideCanvas = 1;
         }
         else{
             //isShowing = !isShowing;
             menu.SetActive(false);
+            inventorySystem.hideCanvas = 0;
         }
     }
 }

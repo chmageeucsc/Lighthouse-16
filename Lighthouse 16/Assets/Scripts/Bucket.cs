@@ -4,18 +4,6 @@ using UnityEngine;
 
 public class Bucket : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     // click on the bucket and the key appears and the bucket falls
     void OnMouseDown(){
         // retrieve  inventorySystem script
@@ -30,7 +18,6 @@ public class Bucket : MonoBehaviour
 
             // show key in inventory
             inventorySystem.keyVar = 1;
-
         }
     }   
 }
