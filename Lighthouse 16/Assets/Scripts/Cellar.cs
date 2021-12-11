@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Cellar : MonoBehaviour
 {
     public GameObject textCanvas;
+    public Text newText;
  
     void Start()
     {
@@ -19,8 +21,12 @@ public class Cellar : MonoBehaviour
 
         // if players have the boltcutters
         if(inventorySystem.boltcuttersVar == 1){
-            // hide canvas text
-            textCanvas.SetActive(false);
+            // change the text
+            newText.text = "The cellar is unlocked.";
+            newText.enabled = true;
+            
+            // show canvas text
+            StartCoroutine(RemoveAfterSeconds(4, textCanvas));
         } else{
             // show canvas text
             StartCoroutine(RemoveAfterSeconds(4, textCanvas));
