@@ -7,7 +7,8 @@ public class Cellar : MonoBehaviour
 {
     public GameObject textCanvas;
     public Text newText;
- 
+    public FadeOut fade;
+
     void Start()
     {
         textCanvas.SetActive(false);
@@ -27,6 +28,10 @@ public class Cellar : MonoBehaviour
             
             // show canvas text
             StartCoroutine(RemoveAfterSeconds(4, textCanvas));
+            fade.Fading();
+
+
+
         } else{
             // show canvas text
             StartCoroutine(RemoveAfterSeconds(4, textCanvas));
