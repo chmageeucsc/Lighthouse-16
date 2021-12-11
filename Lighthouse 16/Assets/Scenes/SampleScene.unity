@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.068591245, g: 0.17902535, b: 0.29280683, a: 1}
+  m_IndirectSpecularColor: {r: 0.068383805, g: 0.1790247, b: 0.29256946, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -18473,6 +18473,7 @@ GameObject:
   - component: {fileID: 1792807165}
   - component: {fileID: 1792807164}
   - component: {fileID: 1792807168}
+  - component: {fileID: 1792807169}
   m_Layer: 0
   m_Name: Cellar
   m_TagString: Untagged
@@ -18571,6 +18572,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textCanvas: {fileID: 183378523}
   newText: {fileID: 1370224910}
+  fade: {fileID: 1792807169}
+--- !u!114 &1792807169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1792807163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3456613c915a34a9c94e16b33e087cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Fade: {fileID: 1340643796}
 --- !u!1001 &1795310879
 PrefabInstance:
   m_ObjectHideFlags: 0

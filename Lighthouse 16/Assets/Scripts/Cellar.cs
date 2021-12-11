@@ -28,9 +28,8 @@ public class Cellar : MonoBehaviour
             
             // show canvas text
             StartCoroutine(RemoveAfterSeconds(4, textCanvas));
-            fade.Fading();
-
-
+            //fade.Fading();
+            StartCoroutine(ExecuteAfterTime(3));
 
         } else{
             // show canvas text
@@ -42,5 +41,13 @@ public class Cellar : MonoBehaviour
         obj.SetActive(true);
         yield return new WaitForSeconds(seconds);
         obj.SetActive(false);
+    }
+
+    IEnumerator ExecuteAfterTime(float time)
+    {
+        yield return new WaitForSeconds(time);
+
+        // Code to execute after the delay
+        fade.Fading();
     }
 }
