@@ -30,7 +30,6 @@ public class Cellar : MonoBehaviour
             StartCoroutine(RemoveAfterSeconds(4, textCanvas));
             //fade.Fading();
             StartCoroutine(ExecuteAfterTime(3));
-            Application.Quit();
 
         } else{
             // show canvas text
@@ -52,5 +51,6 @@ public class Cellar : MonoBehaviour
         fade.Fading();
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+        Application.Quit();
     }
 }
