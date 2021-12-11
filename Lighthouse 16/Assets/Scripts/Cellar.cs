@@ -1,18 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class FishingPole : MonoBehaviour
+public class Cellar : MonoBehaviour
 {
-    public GameObject crate;
     public GameObject textCanvas;
-    public Text newText;
-    
-    // Start is called before the first frame update
+ 
     void Start()
     {
-        crate.SetActive(false);
         textCanvas.SetActive(false);
     }
 
@@ -22,20 +17,11 @@ public class FishingPole : MonoBehaviour
         GameObject invent = GameObject.Find("Inventory");
         InventorySystem inventorySystem = invent.GetComponent<InventorySystem>();
 
-        if(inventorySystem.reelVar == 0){
-            // show canvas text
-            StartCoroutine(RemoveAfterSeconds(4, textCanvas));
-        }
-        else if(inventorySystem.reelVar == 1 && inventorySystem.telescopeVar == 0){
-            // show crate
-            crate.SetActive(true);
-
-            // hide reel
-            inventorySystem.reelVar = 2;
-
-            // change the text
-            newText.text = "The fishing pole brings up a cage.";
-            newText.enabled = true;
+        // if players have the boltcutters
+        if(inventorySystem.boltcuttersVar == 1){
+            // hide canvas text
+            textCanvas.SetActive(false);
+        } else{
             // show canvas text
             StartCoroutine(RemoveAfterSeconds(4, textCanvas));
         }
