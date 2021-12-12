@@ -31,7 +31,7 @@ public class Player : MonoBehaviour
         this.GetComponent<CharacterController>().SimpleMove(delta);
 
         // player movement (left and right ???)
-        this.transform.Translate(Input.GetAxis("Horizontal") * this.speed * 5 * Time.deltaTime, 0, 0);
+        this.transform.Translate(Input.GetAxis("Horizontal") * this.speed * 2 * Time.deltaTime, 0, 0);
 
         //~~~~~~~~~~~~~~~~~~~~~~~might implement this later
         /*
